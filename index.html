@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Marmita – Baixe o Mini E-book Gratuito</title>
+  <meta name="description" content="Baixe gratuitamente o mini e-book com 5 receitas de marmitas fitness econômicas. Emagreça gastando pouco e organize sua semana!" />
+  <meta property="og:title" content="Smart Marmita – Mini E-book Gratuito" />
+  <meta property="og:description" content="5 receitas prontas + checklist de compras. Baixe grátis!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(2,6,23,.08); }
+    .focus-ring { outline: none; box-shadow: 0 0 0 4px rgba(0,132,77,.15); }
+  </style>
+</head>
+<body id="top" class="">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-[#006241] shadow-lg">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#top" class="flex items-center space-x-3 text-white font-bold text-xl">
+        <img src="assets/img/smartmarmitafavicon.svg" alt="Smart Marmita" class="h-10 w-10" />
+       <span class="tracking-wide">SmartMarmita</span>
+      </a>
+      <nav class="hidden items-center space-x-8 md:flex">
+        <a href="#beneficios" class="text-[#FFD43B] hover:text-white font-bold transition nav-link">Benefícios</a>
+        <a href="#recebe" class="text-[#FFD43B] hover:text-white font-bold transition nav-link">O que você recebe</a>
+        <a href="#form" class="text-[#FFD43B] hover:text-white font-bold transition nav-link">Baixar grátis</a>
+      </nav>
+      <a href="#form" class="hidden md:inline-block rounded-xl bg-[#FFD43B] px-4 py-2 font-semibold text-[#006241] shadow hover:bg-[#00844D] hover:text-white transition nav-link">Quero meu e-book</a>
+      <button id="hamburger" aria-label="Abrir menu" aria-expanded="false" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md text-white hover:bg-white/10">
+        <svg id="iconOpen" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="iconClose" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-[#006241]">
+      <div class="mx-auto max-w-7xl px-6 py-3 space-y-1">
+        <a href="#beneficios" class="block rounded-lg px-3 py-2 text-[#FFD43B] hover:bg-white/10 nav-link">Benefícios</a>
+        <a href="#recebe" class="block rounded-lg px-3 py-2 text-[#FFD43B] hover:bg-white/10 nav-link">O que você recebe</a>
+        <a href="#form" class="block rounded-lg px-3 py-2 text-[#FFD43B] hover:bg-white/10 nav-link">Baixar grátis</a>
+        <a href="#form" class="block rounded-lg bg-[#FFD43B] px-3 py-2 font-semibold text-[#006241] shadow hover:bg-[#00844D] hover:text-white nav-link">Quero meu e-book</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- TOAST -->
+  <div id="toast" class="fixed inset-x-0 top-4 z-50 mx-auto hidden w-[92%] max-w-md rounded-xl px-4 py-3 text-center text-sm font-semibold shadow-soft"></div>
+
+  <!-- HERO -->
+  <section id="hero" class="relative bg-[#006241] text-white">
+    <div class="absolute inset-0">
+      <img src="assets/img/vista-superior-de-tigelas-de-salada-vegetariana-com-cuscuz-e-copia-espaco.jpg" alt="Capa do Mini E-book Smart Marmita" class="w-full h-full object-cover opacity-70">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-6 py-32 md:py-48">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-[#FFD43B]">Smart Marmita</h1>
+      <p class="max-w-2xl text-lg md:text-xl mb-8">Receba grátis o mini e-book com receitas práticas, saudáveis e baratas para transformar sua rotina alimentar!</p>
+      <a href="#form" class="bg-[#FFD43B] hover:bg-[#00844D] text-[#006241] hover:text-white font-semibold px-8 py-4 rounded-full shadow-lg transition">Quero meu e-book</a>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios" class="bg-gradient-to-b from-[#EAFBF2] to-white text-slate-800">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#006241]">🚀 Benefícios exclusivos</h2>
+      <p class="mt-4 text-lg text-slate-600">Descubra por que nossas marmitas vão transformar sua rotina</p>
+    </div>
+    <div class="mx-auto mt-10 grid max-w-6xl gap-6 px-4 md:grid-cols-3">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+        <h3 class="text-lg font-semibold text-[#00844D]">Economia real</h3>
+        <p class="mt-2 text-slate-600">Pague menos no mercado e fuja do delivery. Rotas de compras inteligentes e sazonais.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+        <h3 class="text-lg font-semibold text-[#00844D]">Praticidade</h3>
+        <p class="mt-2 text-slate-600">Cozinhe em 2h para a semana toda. Receitas rápidas e padronizadas.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+        <h3 class="text-lg font-semibold text-[#00844D]">Resultados</h3>
+        <p class="mt-2 text-slate-600">Controle de porções e refeições balanceadas que ajudam no emagrecimento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section id="recebe" class="mx-auto max-w-6xl px-4 pb-4">
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#006241]">🎁 O que você recebe</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <ul class="space-y-2">
+          <li>• 5 receitas completas (ingredientes + preparo)</li>
+          <li>• Checklist de compras para 5 dias</li>
+          <li>• Dicas de armazenamento e congelamento</li>
+        </ul>
+        <ul class="space-y-2">
+          <li>• Acesso imediato por e-mail/WhatsApp</li>
+          <li>• Sem custo, sem pegadinhas</li>
+          <li>• Convite para o e-book completo (opcional)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO (novo, reforçado) -->
+  <section id="form" class="mx-auto max-w-3xl px-4 py-12">
+    <div class="rounded-3xl border border-slate-200 bg-white p-6 md:p-10 shadow-soft">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#006241]">📥 Baixar grátis agora</h2>
+      <p class="mt-2 text-slate-600">Preencha seus dados para receber o PDF imediatamente.</p>
+
+      <form id="leadForm" class="mt-8 space-y-5" novalidate>
+        <!-- Nome -->
+        <div>
+          <label for="name" class="mb-2 block text-sm font-medium text-slate-700">Nome completo</label>
+          <input id="name" name="name" type="text" autocomplete="name" required
+                 class="block w-full rounded-2xl border-2 border-slate-300 bg-white px-4 py-4 text-base text-slate-900 placeholder-slate-400 transition focus:border-[#00844D] focus:ring-0 focus-ring focus-ring-[#00844D]/20"
+                 placeholder="Ex.: Ana Silva" />
+          <p class="mt-1 hidden text-sm text-rose-600" data-error="name">Informe pelo menos 2 caracteres.</p>
+        </div>
+
+        <!-- E-mail -->
+        <div>
+          <label for="email" class="mb-2 block text-sm font-medium text-slate-700">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required
+                 class="block w-full rounded-2xl border-2 border-slate-300 bg-white px-4 py-4 text-base text-slate-900 placeholder-slate-400 transition focus:border-[#00844D] focus:ring-0"
+                 placeholder="voce@email.com" />
+          <p class="mt-1 hidden text-sm text-rose-600" data-error="email">Digite um e-mail válido.</p>
+        </div>
+
+        <!-- WhatsApp -->
+        <div>
+          <label for="whatsapp" class="mb-2 block text-sm font-medium text-slate-700">WhatsApp (opcional)</label>
+          <input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel"
+                 class="block w-full rounded-2xl border-2 border-slate-300 bg-white px-4 py-4 text-base text-slate-900 placeholder-slate-400 transition focus:border-[#00844D] focus:ring-0"
+                 placeholder="(11) 91234-5678" />
+        </div>
+
+        <!-- Honeypot -->
+        <div class="hidden">
+          <label>Deixe em branco</label>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <!-- Consentimento -->
+        <div class="flex items-start gap-3 rounded-2xl border-2 border-slate-200 p-4">
+          <input id="consent" name="consent" type="checkbox" required
+                 class="mt-1 h-5 w-5 rounded border-slate-300 text-[#00844D] focus:ring-[#00844D]" />
+          <label for="consent" class="text-sm text-slate-700">
+            Concordo em receber o mini e-book e comunicações relacionadas (LGPD). Você pode sair quando quiser.
+          </label>
+        </div>
+
+        <div class="space-y-3">
+          <button id="submitBtn" type="submit"
+                  class="w-full rounded-2xl bg-[#00844D] px-6 py-4 text-base font-semibold text-white shadow-soft transition hover:bg-[#006241] active:scale-[.99] disabled:opacity-70 disabled:cursor-not-allowed">
+            Quero baixar grátis
+          </button>
+          <p id="status" class="hidden text-center text-sm"></p>
+        </div>
+      </form>
+
+      <p class="mt-5 text-center text-xs text-slate-500">Ao enviar, você concorda com nossa política de privacidade.</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="mx-auto max-w-6xl px-4 pb-10">
+    <div class="rounded-2xl border border-slate-200 bg-[#EAFBF2] p-6 text-center">
+      <h3 class="text-xl font-semibold text-[#006241]">Pronto para organizar sua semana?</h3>
+      <p class="mt-2">Baixe agora o mini e-book gratuito e dê o primeiro passo rumo a hábitos mais saudáveis.</p>
+      <a href="#form" class="inline-flex items-center justify-center rounded-xl bg-[#FFD43B] px-5 py-3 font-medium text-[#006241] shadow-soft transition hover:bg-[#00844D] hover:text-white nav-link">Baixar agora</a>
+    </div>
+  </section>
+
+  <!-- CTA PREMIUM -->
+  <section id="cta-premium-final" class="mx-auto max-w-4xl px-4 pb-20">
+    <div class="rounded-3xl border border-amber-300 bg-gradient-to-r from-amber-50 to-yellow-50 p-8 text-center shadow-soft">
+      <h2 class="text-3xl font-extrabold text-amber-700">🚀 Leve sua organização para o próximo nível</h2>
+      <p class="mt-4 text-lg text-slate-700">
+        A versão gratuita é só o começo. Com o e-book completo você terá <strong>30+ receitas econômicas</strong>,
+        cardápios semanais, listas de compras e estratégias para transformar sua rotina.
+      </p>
+      <a href="https://seudominio.com/checkout" target="_blank"
+         class="mt-6 inline-flex items-center justify-center rounded-2xl bg-[#FFD43B] px-8 py-4 font-semibold text-[#006241] shadow-lg transition hover:bg-[#00844D] hover:text-white">
+        💳 Comprar versão completa
+      </a>
+      <p class="mt-3 text-sm text-slate-500">Acesso imediato após a compra</p>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+    © <span id="year"></span> Smart Marmita. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // === CONFIG ===
+    const WEBHOOK_URL  = "https://n8n.gjrservicos.com.br/webhook-test/lead-marmitasfitness";
+    const DOWNLOAD_URL = "https://drive.google.com/uc?export=download&id=1iVLuu0PatOO8jpNTmc3LJzPMbg9fjIZc";
+
+    // === UTILS ===
+    const qs = sel => document.querySelector(sel);
+    const toast = msg => {
+      const el = qs('#toast'); if (!el) return;
+      el.textContent = msg;
+      el.className = "fixed inset-x-0 top-4 z-50 mx-auto w-[92%] max-w-md rounded-xl px-4 py-3 text-center text-sm font-semibold shadow-soft bg-[#006241] text-white";
+      el.classList.remove('hidden');
+      clearTimeout(el._t); el._t = setTimeout(() => el.classList.add('hidden'), 4000);
+    };
+    const toastErr = msg => {
+      const el = qs('#toast'); if (!el) return;
+      el.textContent = msg;
+      el.className = "fixed inset-x-0 top-4 z-50 mx-auto w-[92%] max-w-md rounded-xl px-4 py-3 text-center text-sm font-semibold shadow-soft bg-rose-600 text-white";
+      el.classList.remove('hidden');
+      clearTimeout(el._t); el._t = setTimeout(() => el.classList.add('hidden'), 5000);
+    };
+    const getUTMs = () => {
+      const p = new URLSearchParams(location.search);
+      return {
+        utm_source: p.get('utm_source') || '',
+        utm_medium: p.get('utm_medium') || '',
+        utm_campaign: p.get('utm_campaign') || '',
+        utm_content: p.get('utm_content') || '',
+        utm_term: p.get('utm_term') || ''
+      };
+    };
+    const isEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v||'').trim());
+
+    // === NAV MOBILE + ANO ===
+    document.addEventListener('DOMContentLoaded', () => {
+      const year = qs('#year'); if (year) year.textContent = new Date().getFullYear();
+
+      const btn = qs('#hamburger'), menu = qs('#mobileMenu');
+      const iconOpen = qs('#iconOpen'), iconClose = qs('#iconClose');
+      const toggleMenu = () => {
+        const open = menu.classList.contains('hidden');
+        menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(open));
+        iconOpen.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+      };
+      if (btn && menu) btn.addEventListener('click', toggleMenu);
+      document.querySelectorAll('a.nav-link[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          const hash = a.getAttribute('href');
+          if (menu && !menu.classList.contains('hidden')) toggleMenu();
+          const t = document.querySelector(hash); if (!t) return;
+          const header = document.querySelector('header');
+          const top = t.getBoundingClientRect().top + window.pageYOffset - (header ? header.getBoundingClientRect().height + 8 : 60);
+          window.scrollTo({ top, behavior: 'smooth' });
+        });
+      });
+
+      // Máscara simples de WhatsApp
+      const w = qs('#whatsapp');
+      if (w) w.addEventListener('input', () => {
+        let v = w.value.replace(/\D/g,'').slice(0,11);
+        if (v.length > 6) w.value = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+        else if (v.length > 2) w.value = `(${v.slice(0,2)}) ${v.slice(2)}`;
+        else w.value = v;
+      });
+
+      // SUBMIT
+      const form = qs('#leadForm'), btnSubmit = qs('#submitBtn'), statusP = qs('#status');
+      if (!form) return;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // evita duplo clique
+        if (btnSubmit) { btnSubmit.disabled = true; btnSubmit.textContent = 'Enviando...'; }
+
+        const data = Object.fromEntries(new FormData(form).entries());
+        const nameI = qs('#name'), emailI = qs('#email');
+
+        // limpa estados visuais
+        [nameI,emailI].forEach(i => i && i.classList.remove('border-rose-500'));
+        document.querySelectorAll('[data-error]').forEach(el => el.classList.add('hidden'));
+
+        // honeypot
+        if ((data.website || '').trim()) { toastErr('Erro no envio. Tente novamente.'); if (btnSubmit){btnSubmit.disabled=false; btnSubmit.textContent='Quero baixar grátis';} return; }
+
+        // validação leve
+        let invalid = false;
+        if (!data.name || String(data.name).trim().length < 2) { nameI.classList.add('border-rose-500'); qs('[data-error="name"]').classList.remove('hidden'); invalid = true; }
+        if (!isEmail(data.email)) { emailI.classList.add('border-rose-500'); qs('[data-error="email"]').classList.remove('hidden'); invalid = true; }
+        if (!data.consent) { toastErr('É necessário aceitar o consentimento (LGPD).'); invalid = true; }
+        if (invalid) { if (btnSubmit){btnSubmit.disabled=false; btnSubmit.textContent='Quero baixar grátis';} return; }
+
+        // payload
+        const payload = {
+          name: data.name || '',
+          email: data.email || '',
+          whatsapp: (data.whatsapp || '').replace(/\D/g,''),
+          consent: true,
+          ...getUTMs(),
+          page: location.href,
+          ts: new Date().toISOString()
+        };
+
+        // fetch com timeout
+        const controller = new AbortController();
+        const t = setTimeout(() => controller.abort(), 10000);
+
+        try {
+          const res = await fetch(WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+            signal: controller.signal
+          });
+          clearTimeout(t);
+          if (!res.ok) throw new Error('Falha no envio: ' + res.status);
+
+          toast('Prontinho! Enviamos o mini e-book para seu e-mail/WhatsApp.');
+          if (DOWNLOAD_URL && DOWNLOAD_URL !== '#') {
+            setTimeout(() => { window.location.href = DOWNLOAD_URL; }, 700);
+          }
+          form.reset();
+        } catch (err) {
+          console.error(err);
+          toastErr('Ocorreu um erro ao enviar. Tente novamente em instantes.');
+        } finally {
+          if (btnSubmit) { btnSubmit.disabled = false; btnSubmit.textContent = 'Quero baixar grátis'; }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
